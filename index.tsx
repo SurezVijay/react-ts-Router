@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
+import Home from './Home';
+import NavBar from './NavBar';
 import './style.css';
 
 interface AppProps { }
@@ -19,7 +20,8 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div>
-        <Hello name={this.state.name} />
+        <Home />
+        <NavBar />
         <p>
           Start editing to see some magic happen :)
         </p>
